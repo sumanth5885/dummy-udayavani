@@ -1,0 +1,478 @@
+.main_container {
+
+    .outer_container {
+        background: #FFFFFF;
+        border: 1px solid #EBF1FF;
+        border-radius: 14px;
+        box-shadow: 0px 0px 5px 0px #26334D0D;
+    }
+
+    .news_container_lists {
+        width: 100%;
+
+        // Topper lists of news
+        .news_container_topper_lists {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+
+            .topper_lists_container {
+                padding: 10px 0px;
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                white-space: nowrap;
+                gap: 10px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+
+                .topper_area {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFFFFF;
+                    border: 1px solid #EBF1FF;
+                    border-radius: 14px;
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 500;
+                    font-size: 14px;
+                    //line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    color: #393939;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    padding: 4px 12px 6px 12px;
+                    height: 30px;
+                    transition: background-color 0.3s;
+                }
+
+                :hover {
+                    background: #8E121E;
+                    color: #FFFFFF;
+                }
+
+                .active {
+                    background: #8E121E;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        // Advertise Container
+        .advertise_container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 100%;
+
+            .vertical_text {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                padding: 10px;
+                font-family: Noto Sans Kannada UI;
+                font-weight: 400;
+                font-size: 9px;
+                //line-height: 100%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+
+            }
+
+            .inner_container {
+                background: #F0F2F5;
+                border-radius: 10px;
+                height: 90px;
+                width: 100%;
+
+                .image_container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+
+                    .image_inner_container {
+                        text-align: center;
+                        display: flex;
+
+                        .image_txt {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 300;
+                            font-size: 11.5px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Main News
+        .main_news_container {
+            background: #FFFFFF;
+            border: 1px solid #EBF1FF;
+            border-radius: 14px;
+            margin: 10px 0px 15px 0px;
+            padding: 5px;
+            position: relative;
+
+            .main_inner_news_containers {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                
+                .main_news_right {
+                    .news_top_txt {
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 18px;
+                        letter-spacing: 0%;
+                        color: #3E3E3E;
+                    }
+
+                    .news_header_txt {
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #8E121E;
+                        padding: 10px 0px;
+                    }
+
+                    .news_bdy_txt_bold {
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 17px;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #323232;
+                    }
+
+                    .news_bdy_plaintxt {
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 400;
+                        font-size: 14px;
+                        //line-height: 100%;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #323232;
+                        padding: 10px 0px;
+                    }
+                }
+
+            }
+            .lines {
+                display: flex;
+                align-self: center;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                z-index: 10;
+              
+                li {
+                  width: 50px;
+                  height: 22px;
+                  margin: 0 5px;
+                  position: relative;
+              
+                  .lines-item {
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                  }
+              
+                  .lines-dash {
+                    height: 3px;
+                    width: 100%;
+                    position: relative;
+                    top: 10px;
+                    background: #EDEFF2;
+                    transition: background 300ms ease;
+                    border-radius: 5px;
+                  }
+              
+                  &.active {
+                    .lines-dash {
+                        background: #EDEFF2;
+                      &::before {
+                        content: '';
+                        display: block;
+                        height: 3px;
+                        width: 0;
+                        background-color: #8E121E;
+                        border-radius: 5px;
+                        animation: progressBar 3000ms linear forwards;
+                      }
+                    }
+                  }
+                }
+              }
+              
+              @keyframes progressBar {
+                0% {
+                  width: 0;
+                }
+                100% {
+                  width: 100%;
+                }
+              }
+        }
+
+        .news_sub_container_lists {
+            margin: 10px 0px 20px 0px;
+
+            .cards_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+
+                .cards_lists {
+                    .sub_container_cards {
+                        background: #FFFFFF;
+                        border: 1px solid #EBF1FF;
+                        border-radius: 14px;
+                        padding: 5px;
+                        width: 100%;
+
+                        .cards_top_img {
+                            position: relative;
+
+                            .image_toper_time {
+                                background: #0000004D;
+                                backdrop-filter: blur(38px);
+                                border-radius: 12px;
+                                font-family: Noto Sans Kannada UI;
+                                font-weight: 400;
+                                font-size: 12px;
+                                //line-height: 100%;
+                                letter-spacing: 0%;
+                                color: white;
+                                width: 80px;
+                                position: absolute;
+                                left: 5px;
+                                top: 5px;
+                                padding: 5px;
+                                text-align: center;
+                            }
+                        }
+
+                        .cards_botoom_header_txt {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #8E121E;
+                        }
+
+                        .cards_botoom_txt {
+                            padding: 10px 10px 5px 10px;
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 400;
+                            font-size: 14px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #393939;
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+
+        // Sub News
+        .news_sub_container_lists {
+            margin: 10px 0px 20px 0px;
+
+            .sub_container_cards {
+                background: #FFFFFF;
+                border: 1px solid #EBF1FF;
+                border-radius: 14px;
+                padding: 5px;
+                min-height: 208px;
+
+                .cards_top_img {
+                    position: relative;
+
+                    .image_toper_time {
+                        background: #0000004D;
+                        backdrop-filter: blur(38px);
+                        border-radius: 12px;
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 400;
+                        font-size: 12px;
+                        //line-height: 100%;
+                        letter-spacing: 0%;
+                        color: white;
+                        width: 80px;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                        padding: 5px;
+                        text-align: center;
+                    }
+                }
+
+                .cards_botoom_header_txt {
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #8E121E;
+                }
+
+                .cards_botoom_txt {
+                    padding: 5px 10px 5px 10px;
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 400;
+                    font-size: 14px;
+                    //line-height: 100%;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #393939;
+                }
+
+
+            }
+        }
+
+        //News Footer Button
+        .news_lists_footer {
+            padding: 20px 0px;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+
+            button {
+                background: #FC0343;
+                box-shadow: 0px 1px 5px 0px #D4161666;
+                border-radius: 84px;
+                font-family: Noto Sans Kannada UI;
+                font-weight: 400;
+                font-size: 13px;
+                //line-height: 100%;
+                letter-spacing: 0%;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: none;
+                width: 198px;
+                height: 40px;
+                padding: 10px 2px 10px 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.topper_lists_container::-webkit-scrollbar {
+    display: none;
+}
+
+ul.slick-dots {
+    display: none !important;
+}
+
+// Media Query
+@media (min-width: 768px) {
+    .lines {
+        display: none !important;
+    }
+
+    .advt_cont .vertical_text {
+        display: none !important;
+    }
+
+    .image_inner_container {}
+}
+
+@media (max-width: 767px) {
+    .advertise_container .inner_container {
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .main_news_container .main_inner_news_containers {
+        align-items: initial !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 48.5%;
+    }
+
+    .main_news_container .main_inner_news_containers {
+        align-items: initial !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+
+    .main_news_container .main_inner_news_containers {
+        align-items: initial !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 32%;
+    }
+
+    .inner_slide_dots_container {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main_container .news_container_lists .news_sub_container_lists .sub_container_cards .cards_botoom_txt {
+        padding: 5px !important;
+    }
+
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {}

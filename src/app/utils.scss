@@ -1,0 +1,45 @@
+/* utility classes */
+.menu_heading {
+    color: #8E121E;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.simple_text {
+    font-size: 0.95rem;
+    color: #464242;
+    font-weight: 500;
+}
+.simple_desc {
+    font-size: clamp(0.8rem, 0.9vw, 1.1rem);
+    color: #393939;
+    font-weight: 400;
+}
+.simple_text_brown {
+    color: #8e121e;
+    font-weight: 400;
+    font-size: clamp(0.8rem, 0.9vw, 1.1rem);
+}
+
+.simple_heading {
+    color: #8e121e;
+    font-size: clamp(0.8rem, 1.20vw, 1.5rem);
+    font-weight: 600;
+}
+
+.ad_text {
+    color: #393939;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.subscribe_btn {
+    cursor: pointer;
+    background-color: #FC0544;
+    box-shadow: 0px 4px 4px 0px #FC054433;
+
+    &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+    }
+}

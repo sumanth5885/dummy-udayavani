@@ -1,0 +1,96 @@
+.custom_pagination_container{
+    display: flex;
+    background: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: fixed;
+    bottom: 34px;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  
+    .arrow_container{
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        background: #fff;
+  
+        &:hover{
+            background: #f7f7f7;
+        }
+  
+        &.left{
+       border-right: 1px solid rgba(224, 231, 245, 1);
+  
+        }
+  
+        &.right{
+    border-bottom-right-radius: 6px;
+  
+        }
+    }
+  
+    .first_container{
+       padding: 15px;
+       color: rgba(22, 22, 22, 1);
+       border-right: 1px solid rgba(224, 231, 245, 1);
+       display: flex;
+       gap: 20px;
+       align-items: center;
+    }
+  
+    .second_container{
+       flex-grow: 1;
+       padding: 15px;
+       color: rgba(82, 82, 82, 1);
+       border-right: 1px solid rgba(224, 231, 245, 1);
+       display: flex;
+       align-items: center;
+  
+    }
+  
+    .third_container{
+       padding: 15px ;
+       color: rgba(22, 22, 22, 1);
+       display: flex;
+       border-right: 1px solid rgba(224, 231, 245, 1);
+  
+  
+       .page_selection_comtainer{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+  
+       
+       }
+  
+    
+  
+       
+  
+    }
+  
+  
+  
+  
+  
+    .borderless-select .MuiSelect-select {
+        padding: 0;
+        font-size: 13px;
+      }
+      
+      .borderless-select::before,
+      .borderless-select::after {
+        display: none !important;
+      }
+      
+      .borderless-select.MuiInputBase-root {
+        box-shadow: none;
+      }
+  }

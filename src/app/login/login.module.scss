@@ -1,0 +1,104 @@
+.login_container {
+
+    height: 100vh;
+  
+
+    .leftContainer {
+        background-color: #fff;
+       
+       display: flex;
+       flex-direction: column;
+     
+       justify-content: center;
+      padding-left: 120px;
+        
+
+        .login_detailsWrapper {
+            box-shadow: 0px 0px 10px 0px #4B4F6F1A;
+            padding: 41px 31px 110px 31px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+         
+      
+            max-width: 400px;
+
+            .littleShineLogo {
+                padding-bottom: 13px;
+            }
+
+            .login_details {
+                .enter_credentails {
+
+                    font-weight: 500;
+                    font-size: 14px;
+                    padding-bottom: 10px;
+
+                }
+
+                .login_header {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 4px;
+
+                    .login_header_text {
+
+                        font-weight: 600;
+                        font-size: 18px;
+
+
+
+                    }
+
+                }
+
+                .login_input_wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .login_button {
+                        background: linear-gradient(90deg, #33363B 0%, #0F151D 100%);
+                        color: #FFFFFF;
+                        outline: none;
+                        padding: 10px 0px;
+                        border-radius: 10px;
+                        border: 1px solid #FFFFFF;
+                        box-shadow: 0px 0px 10px 0px #0000001A;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .rightContainer {
+        position: relative;
+        background: linear-gradient(185.38deg, #33363B 2.65%, #0F151D 95.7%);
+       
+      
+
+        .rightLogo {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%); 
+            width: 150%;
+          
+        }
+        
+    }
+}
+@media (max-width: 1440px) {
+    .rightLogo {
+        left: 50%; 
+        // max-width: 70%; 
+    }
+}
+
+@media(max-width:876px){
+    .rightLogo {
+       display: none;
+    }
+}

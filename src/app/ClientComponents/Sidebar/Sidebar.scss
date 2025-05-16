@@ -1,0 +1,184 @@
+.sidebar {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  padding: 3px;
+  box-shadow: 0px 0px 5px 0px #26334D0D;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: sticky;
+  top: 105px;
+  z-index: 100;
+  // width: 250px;
+  height: 100vh;
+
+  .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .menu-item {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          cursor: pointer;
+
+          .menu-title {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border-bottom: 1px solid #F0F2F5;
+             padding: 8px;
+
+              .left {
+                  display: flex;
+                  align-items: center;
+                  gap: 4px;
+              }
+          }
+
+          .submenu {
+            padding: 6px 6px 6px 8px;
+            transition: background-color 0.3s;
+          
+            &:hover {
+              background-color: #F0F2F5;
+              cursor: pointer;
+            }
+          
+            &.active {
+              background-color: #8E121E;
+          
+              .left {
+                color: #ffffff;
+              }
+          
+              &:hover {
+                background-color: #8E121E;
+              }
+            }
+          
+            a {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%; // 👈 Make the anchor tag fill the entire li
+          
+              .left {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 0.95em;
+                color: #464242;
+                font-weight: 500;
+          
+                .icon_wrapper {
+                  box-shadow: 0px 0px 4px 0px #1C28521A;
+                  border: 2px solid #fff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  width: 30px;
+                  height: 30px;
+          
+                  img {
+                    width: 100%;
+                    height: 40px;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
+          }
+          
+      }
+  }
+
+  .ad_container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 5px;
+
+      .sidebar_ads {
+          background-color: #F0F2F5;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          height: 200px;
+          border-radius: 8px;
+
+          &:first-child {
+              height: 300px;
+          }
+      }
+  }
+}
+
+.desktop_hide {
+  display: none;
+}
+
+// Media Query
+@media (min-width: 320px) and (max-width: 767px) {
+  .mobile_hide {
+    display: none;
+  }
+
+  .desktop_hide {
+    display: block;
+  }
+
+  // &:first-child {
+  //   height: 300px;
+  // }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+// .advertisement_placeholder {
+//   display: block;
+//   width: 100%;
+// }
+// .breaking_imgs_containers {
+//   .breaking_img {
+//     height: auto;
+//   }
+
+//   .breaking_imgs_btm_cont {
+//     .breaking_imgs_inner_cont {
+//       .top_txt {
+//         font-size: 13px !important;
+//         font-weight: 300 !important;
+//       }
+
+//       .bold_txt {
+//         margin-top: 14px !important;
+//         font-size: 15px !important;
+//         font-weight: 600 !important;
+//         line-height: 20px !important;
+//       }
+
+//       .plain_txt {
+//         font-size: 13px !important;
+//         font-weight: 300 !important;
+//         margin-bottom: 8px !important;
+//       }
+//     }
+//   }
+// }
+::-webkit-scrollbar {
+  display: none;
+}

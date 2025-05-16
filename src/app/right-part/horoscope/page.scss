@@ -1,0 +1,353 @@
+.main_container {
+
+    .outer_container {
+        background: #FFFFFF;
+        border: 1px solid #EBF1FF;
+        border-radius: 14px;
+        box-shadow: 0px 0px 5px 0px #26334D0D;
+    }
+
+    .news_container_lists {
+        width: 100%;
+
+        // Topper lists of news
+        .news_container_topper_lists {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+
+            .topper_lists_container {
+                padding: 10px 0px;
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                white-space: nowrap;
+                gap: 10px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+
+                .topper_area {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #FFFFFF;
+                    border: 1px solid #EBF1FF;
+                    border-radius: 14px;
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 500;
+                    font-size: 14px;
+                    //line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    color: #393939;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    padding: 4px 12px 6px 12px;
+                    height: 30px;
+                    transition: background-color 0.3s;
+                }
+
+                :hover {
+                    background: #8E121E;
+                    color: #FFFFFF;
+                }
+
+                .active {
+                    background: #8E121E;
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .heroscope_container {
+
+            .heroscope_container_lists {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                flex-direction: column;
+
+                .heroscope_cards {
+                    background: #FFFFFF;
+                    border: 1px solid #EBF1FF;
+                    border-radius: 14px;
+                    padding: 10px 10px 20px 10px;
+                    width: 100%;
+
+                    .heroscope_lists_cards {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .heroscope_img {
+                            border: 1.19px solid;
+                            border-image-source: linear-gradient(180deg, rgba(255, 249, 249, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+                            border-image-slice: 1;
+                            backdrop-filter: blur(103.44520568847656px);
+                            box-shadow: 0px 0px 11.94px 0px #0B46841A;
+                            background: #FFFFFF;
+                            border-radius: 119px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                        }
+
+                        .heroscope_txt {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 700;
+                            font-size: 18px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #970027;
+                        }
+                    }
+
+                    .heroscope_bdy_txt {
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 500;
+                        font-size: 14px;
+                        //line-height: 100%;
+                        letter-spacing: 0%;
+                        vertical-align: middle;
+                        color: #464242;
+                    }
+                }
+            }
+
+
+            // Panchanga container
+            .panchanga_container {
+                margin: 15px 0px;
+                padding: 5px;
+
+                .panchanga_header_container {
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #8E121E;
+                    background: linear-gradient(90deg, #F7F8FA 0%, #FBFBFB 100%);
+                    border-radius: 8px;
+                    padding: 15px 10px;
+                }
+
+                .panchanga_main_outer {
+                    background: #FDF7E7;
+
+                    .flwr_topper_imgs {
+                        position: relative;
+
+                        .flwr_top_left {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        .flwr_top_right {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+
+                    .flwr_bottom_imgs {
+                        position: relative;
+
+                        .flwr_bottom_left {
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                        }
+
+                        .flwr_bottom_right {
+                            position: absolute;
+                            bottom: -5px;
+                            right: 0;
+                        }
+                    }
+
+                    .panchanga_outer_body {
+                        position: relative;
+                        padding: 17px 20px 17px 22px;
+                        z-index: 9999;
+
+                        .panchanga_bdy_header {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 700;
+                            font-size: 15px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #9B6703;
+                            margin-bottom: 10px;
+                        }
+
+                        .panchanga_bday_txts {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 300;
+                            font-size: 14px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #393939;
+                            margin-bottom: 20px;
+                        }
+
+                        .panchanga_bdy_inner_lists {
+                            div {
+                                font-family: Noto Sans Kannada UI;
+                                font-weight: 300;
+                                font-size: 14px;
+                                //line-height: 100%;
+                                letter-spacing: 0%;
+                                text-transform: uppercase;
+                                color: #393939;
+                                padding: 8px 0px;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .personalized_report_container {
+                border: 2px solid #FFFFFF;
+                border-radius: 16px;
+                padding: 5px;
+                background: #F0F2F5;
+
+                .personalized_header {
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #8E121E;
+                    padding: 10px 0px;
+                }
+
+                .personalized_bdy_container {
+                    padding-bottom: 20px;
+
+                    .sub_container_cards {
+                        box-shadow: 0px 0px 5px 0px #26334D0D;
+                        background: #FFFFFF;
+                        border: 1px solid #EBF1FF;
+                        border-radius: 14px;
+                        padding: 5px;
+
+                        .cards_bdy_outer_txt{
+                            padding: 5px;
+                        .cards_botoom_txt {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 300;
+                            font-size: 14px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            color: #000000;
+                            margin: 5px 0px;
+                        }
+
+                        .cards_footer_txt {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 600;
+                            font-size: 14px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            color: #FC0544;
+                            cursor: pointer;
+                        }
+                    }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.topper_lists_container::-webkit-scrollbar {
+    display: none;
+}
+
+
+// Media Query
+@media (min-width: 480px) {
+    .scroll-btn {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .lines {
+        display: none !important;
+    }
+
+    .advt_cont .vertical_text {
+        display: none !important;
+    }
+
+    .image_inner_container {}
+}
+
+@media (max-width: 767px) {
+    .advertise_container .inner_container {
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .main_news_container .main_inner_news_containers {
+        align-items: initial !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .personalized_report_container .css-y51zav-MuiGrid-root {
+        width: 48.5%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+    .personalized_report_container .css-y51zav-MuiGrid-root {
+        width: 48.5%;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .personalized_report_container .css-y51zav-MuiGrid-root {
+        width: 32%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .personalized_report_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {}

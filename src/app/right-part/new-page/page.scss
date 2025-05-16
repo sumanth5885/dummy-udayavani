@@ -1,0 +1,474 @@
+.main_container {
+
+    .outer_container {
+        background: #FFFFFF;
+        border: 1px solid #EBF1FF;
+        border-radius: 14px;
+        box-shadow: 0px 0px 5px 0px #26334D0D;
+    }
+
+    .news_container_lists {
+        width: 100%;
+
+        // Advertise Container
+        .advertise_container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            width: 100%;
+
+            .vertical_text {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                padding: 10px;
+                font-family: Noto Sans Kannada UI;
+                font-weight: 400;
+                font-size: 9px;
+                //line-height: 100%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+
+            }
+
+            .inner_container {
+                background: #F0F2F5;
+                border-radius: 10px;
+                height: 90px;
+                width: 100%;
+
+                .image_container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+
+                    .image_inner_container {
+                        text-align: center;
+                        display: flex;
+
+                        .image_txt {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 300;
+                            font-size: 11.5px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // Rastriya Sudi
+        .rastriya_sudhi_container {
+            margin: 15px 0px;
+            padding: 15px 10px;
+
+            .rastriya_sudhi_topper_txt {
+                font-family: Noto Sans Kannada UI;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                text-transform: uppercase;
+                color: #393939;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                span {
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 21px;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    text-transform: uppercase;
+                    color: #8E121E;
+
+                }
+            }
+
+            .scnd_topper_header {
+                font-family: Noto Sans Kannada UI;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                color: #393939;
+                margin: 10px 0px;
+            }
+
+            .rastriya_sudhi_outer_cont {
+                position: relative;
+
+                .rastriya_sudhi_img_cont {
+                    position: relative;
+                }
+
+                .img_bottom_cont {
+                    position: absolute;
+                    bottom: 8px;
+                    left: 5px;
+                    background: #00000080;
+                    backdrop-filter: blur(18px);
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 300;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                    text-transform: uppercase;
+                    color: white;
+                    padding: 5px;
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    border-radius: 16px;
+                }
+            }
+
+            .rashtriya_sudhi_txt_cont {
+                .txt_cont_top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 0px;
+
+                    .cont_top_img {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+
+                    .cont_top_left {
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 500;
+                        font-size: 14px;
+                        //line-height: 100%;
+                        letter-spacing: 0%;
+                        text-transform: uppercase;
+                        color: #393939;
+                    }
+
+                    .cont_top_right {
+                        .fonts {
+                            border: 1px solid #EBF1FF;
+                            border-radius: 16px;
+                            width: 26px;
+                            height: 26px;
+                            padding: 4px 4px;
+                            text-align: center;
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 400;
+                            leading-trim: Cap height;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #8E121E;
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .smaller_font {
+                            font-size: 16px;
+                        }
+
+                        .bigger_font {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .pargraph_txt {
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 400;
+                    font-size: 15px;
+                    //line-height: 100%;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                    color: #393939;
+                }
+
+                .footer_txt {
+                    color: #8E121E;
+                    font-family: Noto Sans Kannada UI;
+                    font-weight: 400;
+                    font-size: 12px;
+                    //line-height: 100%;
+                    letter-spacing: 0%;
+                    padding: 10px 0px;
+                }
+
+                .footer_buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 20px 0px;
+                    border-top: 1px solid #EBF1FF;
+                    padding: 20px 0px 0px 0px;
+
+                    .prev_btn {
+                        background: #EDF1F6;
+                        border-radius: 84px;
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 400;
+                        font-size: 13px;
+                        //line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #393939;
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        border: none;
+                        width: 145px;
+                        height: 40px;
+                        padding: 10px 10px 10px 2px;
+                        cursor: pointer;
+                    }
+
+                    .nxt_btn {
+                        background: #FC0343;
+                        box-shadow: 0px 1px 5px 0px #D4161666;
+                        border-radius: 84px;
+                        font-family: Noto Sans Kannada UI;
+                        font-weight: 400;
+                        font-size: 13px;
+                        //line-height: 100%;
+                        letter-spacing: 0%;
+                        color: #FFFFFF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        border: none;
+                        width: 198px;
+                        height: 40px;
+                        padding: 10px 2px 10px 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .rastriya_sudhi_outside_bdy {
+            margin: 20px 0px;
+
+            .bdy_header {
+                font-family: Noto Sans Kannada UI;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                color: #8E121E;
+
+            }
+
+            .btm_txt {
+                font-family: Noto Sans Kannada UI;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 32px;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                color: #FC0544;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+            }
+        }
+
+
+        .news_sub_container_lists {
+            margin: 10px 0px 20px 0px;
+
+            .cards_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+
+                .cards_lists {
+                    .sub_container_cards {
+                        background: #FFFFFF;
+                        border: 1px solid #EBF1FF;
+                        border-radius: 14px;
+                        padding: 5px;
+                        margin-right: 8px;
+
+                        .cards_top_img {
+                            position: relative;
+
+                            .image_toper_time {
+                                background: #0000004D;
+                                backdrop-filter: blur(38px);
+                                border-radius: 12px;
+                                font-family: Noto Sans Kannada UI;
+                                font-weight: 400;
+                                font-size: 12px;
+                                //line-height: 100%;
+                                letter-spacing: 0%;
+                                color: white;
+                                width: 80px;
+                                position: absolute;
+                                left: 5px;
+                                top: 5px;
+                                padding: 5px;
+                                text-align: center;
+                            }
+                        }
+
+                        .cards_botoom_header_txt {
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #8E121E;
+                            margin-top: 10px;
+                        }
+
+                        .cards_botoom_txt {
+                            padding: 10px 0px 5px 0px;
+                            font-family: Noto Sans Kannada UI;
+                            font-weight: 400;
+                            font-size: 14px;
+                            //line-height: 100%;
+                            letter-spacing: 0%;
+                            text-transform: uppercase;
+                            color: #393939;
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #F0F2F5;
+    border-radius: 40px;
+    outline: none;
+    position: relative;
+}
+
+/* Webkit - Chrome, Safari */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: url('/assets/images/resizer.svg') no-repeat center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 0%;
+    transform: translateY(0%);
+
+}
+
+/* Firefox */
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background: url('/assets/images/resizer.svg') no-repeat center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+// Media Query
+@media (min-width: 768px) {
+    .inner_slide_dots_container {
+        display: none !important;
+    }
+
+    .advt_cont .vertical_text {
+        display: none !important;
+    }
+
+    .image_inner_container {}
+}
+
+@media (max-width: 767px) {
+    .advertise_container .inner_container {
+        height: 250px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .main_news_container .main_inner_news_containers {
+        align-items: initial !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 48.5%;
+    }
+
+    .main_news_container .main_inner_news_containers {
+        align-items: initial !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+
+    .main_news_container .main_inner_news_containers {
+        align-items: initial !important;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 32%;
+    }
+
+    .inner_slide_dots_container {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main_container .news_container_lists .news_sub_container_lists .sub_container_cards .cards_botoom_txt {
+        padding: 5px !important;
+    }
+
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main_container .css-y51zav-MuiGrid-root {
+        width: 49%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {}
