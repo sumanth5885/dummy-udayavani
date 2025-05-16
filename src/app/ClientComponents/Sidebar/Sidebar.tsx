@@ -52,7 +52,7 @@ const Sidebar = () => {
                 <div className="icon_wrapper">
                   <Image src={news_logo} alt="menu-icon" />
                 </div>
-                SUDDIGALU
+                ಸುದ್ದಿಗಳು
               </div>
               <Image
                 src={pathname === "/right-part/new-page" ? arrow_white : menu_dropdown_hide}
